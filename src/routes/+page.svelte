@@ -29,10 +29,10 @@
 			<div class="flex h-full items-center shadow-lg rounded">
 				<input type="text" class="text-[#718096] mx-4 px-1 w-32" bind:value={counters[i].title} />
 				<span class="text-lg font-bold px-[27px] w-[42px]">{count}</span>
-				<div class="ml-auto text-white text-lg flex h-[35px]">
-					<button class="bg-[#F56565] rounded-l w-9 -m-px" on:click={() => countUp(i)}>+</button>
-					<button class="bg-[#4299E1] w-[31px] -m-px" on:click={() => countDown(i)}>-</button>
-					<button class="bg-[#ECC94B] rounded-r w-[33px] -m-px" on:click={() => countReset(i)}>0</button>
+				<div class="ml-auto text-white text-lg flex h-[35px] -m-px">
+					<button class="bg-[#F56565] rounded-l w-9" on:click={() => countUp(i)}>+</button>
+					<button class="bg-[#4299E1] w-[31px]" on:click={() => countDown(i)}>-</button>
+					<button class="bg-[#ECC94B] rounded-r w-[33px]" on:click={() => countReset(i)}>0</button>
 					<button class="text-[#A0AEC0] text-base px-4" on:click={() => removeCounter(i)}>x</button>
 				</div>
 			</div>
